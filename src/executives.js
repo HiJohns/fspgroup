@@ -5,7 +5,8 @@ import { createStore, applyMiddleware } from 'redux'
 
 import { createBrowserHistory } from 'history'
 import { Route, Redirect, Switch, withRouter } from 'react-router-dom'
-import { ConnectedRouter, routerMiddleware, push } from 'react-router-redux'
+import { ConnectedRouter } from 'connected-react-router'
+import { routerMiddleware, push } from 'react-router-redux'
 import moment from 'moment'
 
 import app from './reducers'
