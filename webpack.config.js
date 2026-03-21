@@ -53,18 +53,7 @@ module.exports = {
           }
         }
       })
-    ],
-    splitChunks: {
-      chunks: 'all',
-      cacheGroups: {
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendor',
-          filename: 'vendor.min.js',
-          priority: 10
-        }
-      }
-    }
+    ]
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
