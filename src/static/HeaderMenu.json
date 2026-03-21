@@ -1,0 +1,25 @@
+[
+    {
+        "title": "HOME",
+        "name": "main",
+        "link": "index.html"
+    },
+    {
+        "title": "SEMINARS",
+        "name": "seminars",
+        "link": "seminars.html"
+    },
+    {
+        "title": "SPONSORS",
+        "name": "sponsors",
+        "link": "sponsors.html" 
+    }, {
+        "title": "EXECUTIVES",
+        "name": "executives",
+        "link": "executives.html" 
+    }, {
+        "title": "ABOUT",
+        "name": "about",
+        "link": "about.html"
+    }
+]

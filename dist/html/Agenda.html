@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Image with PDF Display</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('/dist/images/2.26-poster.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pdf-container {
+        width: 800px;
+        height: calc(100% - 10rem);
+        margin: 6rem 0 4rem;
+        background-color: rgba(255, 255, 255, 0.8);
+        overflow: auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+    .pdf-object {
+        width: 100%;
+        height: 99%;
+    }
+</style>
+</head>
+<body>
+<div class="pdf-container">
+    <object class="pdf-object" data="https://www.fspgroup.ca/docs/FSP_2024_Agenda.pdf" type="application/pdf">
+        <p>It appears you don't have a PDF plugin for this browser.
+        No biggie... you can <a href="https://www.fspgroup.ca/docs/FSP_2024_Agenda.pdf">click here to download the PDF file.</a></p>
+    </object>
+</div>
+</body>
+</html>

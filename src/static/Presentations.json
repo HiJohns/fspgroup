@@ -1,0 +1,389 @@
+[
+    {
+        "event": "Jun. 2, 2023 Seminar",
+        "materials": [
+               {
+                      "link":"/docs/2023_Spring_Seminar/Thales_Customer_IAM_for_privacy_compliance_and_fraud_protection.pdf",
+                      "title":"Customer IAM for privacy compliance and fraud protection",
+                      "size":"2.3MB"
+               },
+               {
+                      "link":"/docs/2023_Spring_Seminar/Tanium_Converged_Endpoint_Management.pdf",
+                      "title":"Converged Endpoint Management",
+                      "size":"1.2MB"
+               },
+               {
+                      "link":"/docs/2023_Spring_Seminar/Vanguard_Where_to_Start_Building_a_Cybersecurity_Framework Governance_Plan_for_the_Mainframe.pdf",
+                      "title":"Where to Start Building a Cybersecurity Framework/Governance Plan for the Mainframe",
+                      "size":"4.0MB"
+               },
+               {
+                      "link":"/docs/2023_Spring_Seminar/CRWD_Trust_Security_for_the_Real_World.pdf",
+                      "title":"Trust Security for the Real World",
+                      "size":"1.7MB"
+               },
+               {
+                      "link":"/docs/2023_Spring_Seminar/KPMG_Understanding_Risk_in_the_Quantum_Computing_Landscape.pdf",
+                      "title":"Understanding Risk in the Quantum Computing Landscape",
+                      "size":"2.5MB"
+               },
+               {
+                      "link":"/docs/2023_Spring_Seminar/Venafi_CA_Browser_Forum_Updated_Requirements_Problems_with_code_signing_process_today.pdf",
+                      "title":"CA/Browser Forum Updated Requirements & Problems with code signing process today!",
+                      "size":"2.8MB"
+               },
+               {
+                      "link":"/docs/2023_Spring_Seminar/Trend_Trend_Vision_One_Strategies_for_Managing_Attack_Surface_Risk.pdf",
+                      "title":"Trend Vision One: Strategies for Managing Attack Surface Risk",
+                      "size":"6.1MB"
+               }
+        ]
+        
+    },
+    {
+        "event": "Spet. 30, 2020 Seminar",
+        "materials": [
+            {
+                "link": "/docs/2020_Fall_Seminar/FSP_2020_Agenda_v1.pdf",
+                "title": "FSP_2020_Agenda_v1.pdf",
+                "size": "30KB",
+                 "author": ""
+            },
+            {
+                "link": "/docs/2020_Fall_Seminar/Cheetahs-Crypto-FSP2020.v1.pptx",
+                "title": "Venafi_Cheetahs-Crypto-FSP2020.v1.pptx",
+                "size": "44.3MB",
+                "author": ""
+            },
+            {
+                "link": "/docs/2020_Fall_Seminar/FSP2020.pptx",
+                "title": "RBC_FSP2020.pptx",
+                "size": "57.3MB",
+                "author": ""
+            },
+            {
+                "link": "/docs/2020_Fall_Seminar/InfoSec_Global_CLM_FPS.pdf",
+                "title": "InfoSec_Global_CLM_FPS.pdf",
+                "size": "2.0MB",
+                "author": ""
+            },
+            {
+                "link": "/docs/2020_Fall_Seminar/Ontario_Tech-Hung_DRAFT_24September2020.pdf",
+                "title": "Ontario_Tech-Hung_DRAFT_24September2020.pdf",
+                "size": "4.3MB",
+                "author": ""
+            },
+            {
+                "link": "/docs/2020_Fall_Seminar/ProofPoint-Protect-2020-PPT-IP 20 Enterprise DLP_DPS1 Proofpoint.pptx",
+                "title": "ProofPoint-Protect-2020-PPT-IP 20 Enterprise DLP_DPS1 Proofpoint.pptx",
+                "size": "11.7MB",
+                "author": ""
+            },
+            {
+                "link": "/docs/2020_Fall_Seminar/Tenable-Container Security for FSP-20200925.pptx",
+                "title": "Tenable-Container Security for FSP-20200925.pptx",
+                "size": "7.4MB",
+                "author": ""
+            },
+            {
+                "link": "/docs/2020_Fall_Seminar/Thales-Secure Cloud Transformation.pptx",
+                "title": "Thales-Secure Cloud Transformation.pptx",
+                "size": "7.0MB",
+                "author": ""
+            }
+        ]
+    },
+    {
+        "event": "Spet. 13, 2019 Seminar",
+        "materials": [
+            {
+                "link": "/docs/2019_Fall_Seminar/2013-2018_Feedback_Surveys_Summary.pptx",
+                "title": "2013-2018 Feedback Surveys Summary.pptx",
+                "size": "528KB",
+                "author": ""
+            },
+            {
+                "link": "/docs/2019_Fall_Seminar/FSP_CFS_SSH_Venafi_MMilbert-BL.pptx",
+                "title": "SSH Keys: Security Asset or Liability?",
+                "size": "6.5MB",
+                "author": "Marty Milbert"
+            },
+            {
+                "link": "/docs/2019_Fall_Seminar/FSP_Fall_Seminar_2019-Outside_the_Network_9132019.pptx",
+                "title": "Outside the Network: Protecting People and Customers Against Digital Threats",
+                "size": "6.0MB",
+                "author": ""
+            },
+            {
+                "link": "/docs/2019_Fall_Seminar/FSP_Toy_Talk_13Sept2019.pdf",
+                "title": "Children's Privacy Protection Engine from Smart Anthropomorphic Toys to Robots",
+                "size": "6.1MB",
+                "author": "Patrick C.K.Hung"
+            },
+            {
+                "link": "/docs/2019_Fall_Seminar/From_Disruption_To_Resilience-OAGITM_Presentation.pdf",
+                "title": "From Disruption To Resilience",
+                "size": "5.5MB",
+                "author": "Dylan DeAnda"
+            },
+            {
+                "link": "/docs/2019_Fall_Seminar/IAM_in_the_Cloud-Asaf_Lerner_FSP_Sep_2019.pptx",
+                "title": "IAM in the Cloud-Asaf Lerner FSP Sep 2019.pptx",
+                "size": "3.5MB",
+                "author": ""
+            },
+            {
+                "link": "/docs/2019_Fall_Seminar/MaySarout-13Sept2019-FSP_Fall_2019.pdf",
+                "title": "Addressing Cybersecurity Talent Shortage.pdf",
+                "size": "891.6KB",
+                "author": "May Sarout"
+            },
+            {
+                "link": "/docs/2019_Fall_Seminar/Rethinking_Vulnerability_Prioritization.pptx",
+                "title": "Rethinking vulnerability prioritization in the modern threat landscape",
+                "size": "6.6MB",
+                "author": "James Smith"
+            },
+            {
+                "link": "/docs/2019_Fall_Seminar/Roadmap_to_Compliance_light.pptx",
+                "title": "How to Create Corporate Compliance for the Mainframe",
+                "size": "1.8MB",
+                "author": "Brian Marshall"
+            }
+        ]
+    },
+    {
+        "event": "Apr. 29, 2016 Seminar",
+        "materials": [
+            {
+                "link": "/docs/FSP20160429_CIBCVP1.pptx",
+                "title": "Key Note: Achieving a Strategic Cybersecurity Program",
+                "size": "714.14Kb",
+                "author": "Joe Lobianco, VP Infosec CIBC"
+            },
+            {
+                "link": "/docs/FSP20160429_IBMChris.2016_XFTIR_ClientFacing_Presentation_v1.2.pptx",
+                "title": "Borderless Breaches and Migrating Malware: How Cybercrime is Breaking Down Barriers to your Data",
+                "size": "4.55MB",
+                "author": "Chris Poulin, IBM"
+            },
+            {
+                "link": "/docs/FSP20160429_VanguardBrian3.pdf",
+                "title": "What is PCI/DSS And How Does It Affects Me With PCI 3.2 Being Moved Up?",
+                "size": "4.75MB",
+                "author": "Brain Marshall, Vanguard"
+            },
+            {
+                "link": "/docs/FSP20160429_netrus.SandraLiepkalns_Cloud Reality_Risks4.pdf",
+                "title": "Cloud Computing – Risk and Reality",
+                "size": "1.13MB",
+                "author": "Sandra Liepkalns, Netrus"
+            },
+            {
+                "link": "/docs/FSP20160429_PaloAltoGarry5.pptx",
+                "title": "Collaborative Cloud Enablement",
+                "size": "3.33MB",
+                "author": "Garry Coldwells, Palo Alto"
+            },
+            {
+                "link": "/docs/FSP20160429_ProofPointFiaazHumanFactorPresentation.pptx",
+                "title": "How Today’s Advanced Threats Prey on the Human Factor",
+                "size": "4.50MB",
+                "author": "Fiaaz Walji, ProofPoint"
+            },
+            {
+                "link": "/docs/FSP20160429_IntelDouglasOperationalizingThreatIntelligence7.pptx",
+                "title": "Operationalizing Threat Intelligence",
+                "size": "3.47MB",
+                "author": "Doug Cooke, Intel"
+            }
+        ]
+    },
+    {
+        "event": "Oct. 30, 2015 Seminar",
+        "materials": [
+            {
+                "link": "/docs/FSP20151030_CloudServicesStevenCohen.pdf",
+                "title": "I'm Moving To The Cloud - What Should I Pack?",
+                "size": "1.85MB",
+                "author": "Steven Cohen, HERJAVEC GROUP"
+            },
+            {
+                "link": "/docs/FSP20151030_FBICyberSpecialAgent.pptx",
+                "title": "Current State Of Cyber Security Viewpoint Of an FBI Cyber Special Agent",
+                "size": "32.53MB",
+                "author": "Andre McGregor, TANIUM"
+            },
+            {
+                "link": "/docs/FSP20151030_Scalar.pdf",
+                "title": "What does it take to deliver the most technologically advanced Games ever?",
+                "size": "2.17MB",
+                "author": "Enzo Sacco, Quang Tu, Scalar"
+            },
+            {
+                "link": "/docs/FSP20151030_Vanguard.pdf",
+                "title": "Multi Factor Authentication - Security Beyond Usernames and Passwords",
+                "size": "2.29MB",
+                "author": "Brian Marshall, Vanguard"
+            },
+            {
+                "link": "/docs/FSP20150529_IBM.pptx",
+                "title": "Cloud in Your IT Sky? Security and Legal Topics ",
+                "size": "2.91MB",
+                "author": "Mike Leithead, IBM Canada"
+            }
+        ]
+    },
+    {
+        "event": "May 29, 2015 Seminar",
+        "materials": [
+            {
+                "link": "/docs/FSP20150529_Cyber_Breach.pdf",
+                "title": "Trends and Threats, Examples of Real Breaches",
+                "size": "2.95MB",
+                "author": "Adam Evans, RBC"
+            },
+            {
+                "link": "/docs/FSP20150529_Chad_Marson.pptx",
+                "title": "Creating a Mature Information Security and Technology Risk Management Capability Program",
+                "size": "3.5MB",
+                "author": "Chad Marson, BMO"
+            },
+            {
+                "link": "/docs/FSP20150529_XBridge_Presentation.pdf",
+                "title": "Data Discovery and Understanding the Need",
+                "size": "3.23MB",
+                "author": "Jim Yurek, Xbridge Systems"
+            },
+            {
+                "link": "/docs/FSP20150529_Vitaly_Levin.pptx",
+                "title": "Mining Big Data for Fun, Fraud and Profit",
+                "size": "1.96MB",
+                "author": "Vitaly Levin, Lioncor"
+            },
+            {
+                "link": "/docs/FSP20150529_Peter_Roberts_Bio.pdf",
+                "title": "PCI Updates",
+                "size": "336kB",
+                "author": "Peter Roberts, Vanguard"
+            }
+        ]
+    },
+    {
+        "event": "October 25, 2013 Seminar",
+        "materials": [
+            {
+                "link": "/docs/FSP20131025_01_Keynote.pdf",
+                "title": "We are all adults here, lets hear the truth and work with the facts",
+                "size": "55KB",
+                "author": "Eric Parent, CEO - Logicnet and EVA-Technologies"
+            },
+            {
+                "link": "/docs/FSP20131025_02_Dell.pdf",
+                "title": "Identity & Access Governance: Key to Security or Completely Useless?",
+                "size": "948KB",
+                "author": "Jason Remillard, Product Manager - Dell Software Group"
+            },
+            {
+                "link": "/docs/FSP20131025_03_Ping.pdf",
+                "title": "Managing Identity In The Cloud",
+                "size": "1MB",
+                "author": "Jim Gravelle, Solution Architect- Ping Identity"
+            },
+            {
+                "link": "/docs/FSP20131025_04_Xbridge.pdf",
+                "title": "How Do You Know What To Protect?",
+                "size": "3MB",
+                "author": "Barry Schrager, President - Xbridge Systems"
+            },
+            {
+                "link": "/docs/FSP20131025_05_Thales.pdf",
+                "title": "Mobile Payments - Applications and Challenges",
+                "size": "3.5MB",
+                "author": "Jose Diaz, Director, Business Development & Technical Alliances - Thales e-Security"
+            },
+            {
+                "link": "/docs/FSP20131025_06_SentryMetrics.pdf",
+                "title": "Advanced DDoS Defense",
+                "size": "902KB",
+                "author": "Gord Taylor, Global Practice Lead � Sentry Metrics"
+            }
+        ]
+    },
+    {
+        "event": "May 3, 2013 Seminar",
+        "materials": [
+            {
+                "link": "/docs/FSP20130503_00-Keynote.pptx",
+                "title": " Enhancing Malware Detection",
+                "size": "5MB",
+                "author": "Doug Cooke Director, Sales Engineering Canada - McAfee"
+            },
+            {
+                "link": "/docs/FSP20130503_02-BYOD.pdf",
+                "title": " BYOD - THEY�RE HERE.  HOW ARE YOU MANAGING THEM?",
+                "size": "436KB",
+                "author": "Eric Jacksch � CSC Cybersecurity"
+            },
+            {
+                "link": "/docs/FSP20130503_03.pptx",
+                "title": "MOBILE APPLICATION SECURITY",
+                "size": "6MB",
+                "author": "Paras Shah - HP Enterprise Security Products Country Manager, Canada "
+            },
+            {
+                "link": "/docs/FSP20130503_05.pdf",
+                "title": "How Secure Is Your Data? � Let�s talk Layer 7",
+                "size": "2MB",
+                "author": "Josh Hogle, Principal Security Engineer - Imperva"
+            },
+            {
+                "link": "/docs/FSP20130503_04%20Websense.PPSX",
+                "title": "WebSense 2013 Threat Report Presio",
+                "size": "11MB",
+                "author": "Fiaaz Walji � Websense"
+            },
+            {
+                "link": "/docs/TBD.pdf",
+                "title": "(Awaiting Presentation) Revolution = Full Circle, Security in the Cloud",
+                "size": "...KB",
+                "author": "Steven Ringelberg - Vanguard"
+            }
+        ]
+    },
+    {
+        "event": "October 26, 2012 Seminar",
+        "materials": [
+            {
+                "link": "/docs/FSP201210_01.ppt",
+                "title": "Managing Threats in a Changing World",
+                "size": "107KB",
+                "author": "John DeGroot � Lead Architect, Security - RBC"
+            },
+            {
+                "link": "/docs/FSP201210_02.pdf",
+                "title": "Mobile Payments, Transactions &amp; Authentication",
+                "size": "1,900KB",
+                "author": "Rob Wilson � Sr. Principal Consultant - CA Technologies "
+            },
+            {
+                "link": "/docs/FSP201210_03.pptx",
+                "title": "Externalize All Security Aspects",
+                "size": "598KB",
+                "author": "Doron Grinstein � Chief Architect&nbsp; - Quest"
+            },
+            {
+                "link": "/docs/FSP201210_04.pdf",
+                "title": "Tactical focuses for enabling a GRC program",
+                "size": "3,129KB",
+                "author": "Mike Otto � Director of GRC services - Sentry Metrics"
+            },
+            {
+                "link": "/docs/FSP201210_06.pdf",
+                "title": "Vulnerability Scanning &amp; Management",
+                "size": "339KB",
+                "author": "Ray Overby � z/OS Internals &amp; Security expert - Key Resources"
+            }
+        ]
+    }
+]

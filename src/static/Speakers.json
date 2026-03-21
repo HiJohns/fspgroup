@@ -1,0 +1,207 @@
+[
+    {
+        "year": "2024",
+        "list": [
+            {
+                "image": "Adam Evans and Faezeh Khabbaz.jpg",
+                "name": "Adam Evans & Faezeh Khabbaz",
+                "info": "Adam Evans (Left), SVP and CISO of RBC fireside chat with Faezeh Khabbaz, Sr. Diretor of RBC GCS"
+            },
+            {
+                "image": "Milton Rosberg.jpg",
+                "name": "Milton Rosberg",
+                "info": "Global VP at Vanguard"
+            },
+            {
+                "image": "Sean McManus & Sean Comrie.jpg",
+                "name": "Sean McManus & Sean Comrie",
+                "info": "Sean McManus (Left), Sales Engineer at Zscaler and Sean Comrie, Senior Sales Engineer at Rubrik "
+            },
+            {
+                "image": "Blair Canavan.jpg",
+                "name": "Blair Canavan",
+                "info": "Director of Business Development at Thales"
+            },
+            {
+                "image": "Ryan Doon.jpg",
+                "name": "Ryan Doon",
+                "info": "Senior Director and Solutions Engineering at Tanium"
+            },
+            {
+                "image": "Elie Nasrallah.jpg",
+                "name": "Elie Nasrallah",
+                "info": "Principal Sales Engineer at SentinelOne"
+            },
+            {
+                "image": "Rola Turk.jpg",
+                "name": "Rola Turk",
+                "info": "Senior Director RBC Global Cyber Security"
+            },
+            {
+                "image": "Nelson Liu & MC Danielle Chen.jpg",
+                "name": "Nelson Liu & MC Danielle Chen",
+                "info": "Nelson Liu(Left) , President of FSP and MC Danielle Chen, IT Channel Development Specialist"
+            },
+            {
+                "image": "Aaron Chow.jpg",
+                "name": "Aaron Chow",
+                "info": "Director of Cloud Security Engineering at Scotiabank" 
+            },
+            {
+                "image": "Ian Gallagher.jpg",
+                "name": "Ian Gallagher",
+                "info": "Canada Solutions Engineering at Cloudflare"
+            },
+            {
+                "image": "Patrick C K Hung.jpg",
+                "name": "Patrick C. K. Hung",
+                "info": "Professor of Ontario Tech University"
+            }
+        ]
+    },
+    {
+        "year": "2023",
+        "list": [
+            {
+                "image": "Alex Esser.JPG",
+                "name": "Alex Esser",
+                "info": "Director of Product Management IAM at Thales"
+            },
+            {
+                "image": "Alexander Rau.JPG",
+                "name": "Alexander Rau",
+                "info": "Information Security Leader at KPMG "
+            },
+            {
+                "image": "Azin Moinaddini.JPG",
+                "name": "Azin Moinaddini",
+                "info": "Director, Security Operations - Public Cloud, RBC"
+            },
+            {
+                "image": "Faisal Razzak.JPG",
+                "name": "Faisal Razzak",
+                "info": "Senior Product Manager, R&D at Venafi"
+            },
+            {
+                "image": "George Boulos.JPG",
+                "name": "George Boulos",
+                "info": "Cybersecurity lead for CrowdStrike Sean McManus - Sales Engineer at Zsca"
+            },
+            {
+                "image": "Ian WIlliams.JPG",
+                "name": "Ian WIlliams",
+                "info": "Director, Information Management, Toronto Police Service"
+            },
+            {
+                "image": "Milton Rosberg.JPG",
+                "name": "Milton Rosberg",
+                "info": "Vice President of Global Sales, Marketing and Business Development at Vanguard"
+            },
+            {
+                "image": "Patrick C K Hung.jpeg",
+                "name": "Dr. Patrick C.K. Hung",
+                "info": "Faculty of Business and IT, Ontario Tech University"
+            },
+            {
+                "image": "Peter Cresswell.JPG",
+                "name": "Peter Cresswell",
+                "info": "Security Architect, Engineer at TrendMicro Canada"
+            },
+            {
+                "image": "Phil Vero.JPG",
+                "name": "Phil Vero",
+                "info": "Sr. Director, Crypto Services, Global Cyber Security at RBC"
+            },
+            {
+                "image": "Ryan Doon.JPG",
+                "name": "Ryan Doon",
+                "info": "Sr. Director, Technical Account Management at Tanium"
+            },
+            {
+                "image": "Sean McManus.JPG",
+                "name": "Sean McManus",
+                "info": "Sales Engineer at Zscaler"
+            },
+            {
+                "image": "Sumit Bhatia.JPG",
+                "name": "Sumit Bhatia",
+                "info": "Director, Innovation and Policy, Rogers Cybersecure Catalyst, Toronto Metropolitan University"
+            }
+        ]
+    },
+    {
+        "year": "2020",
+        "list": [
+            {
+                "image": "Mayank.JPG",
+                "name": "Mayank Choudhary",
+                "info": "SVP, Insider Threat<br>Management, Proofpoint"
+            },
+            {
+                "image": "Sol Cates Photo.jpg",
+                "name": "Sol Cates",
+                "info": "Principal Technologist,<br>CTO Office, Thales Group"
+            },
+            {
+                "image": "James.jpg",
+                "name": "James Smith",
+                "info": "Principal Security<br>Engineer at Tenable"
+            },
+            {
+                "image": "Dr.Huang.JPG",
+                "name": "Patrick C. K. Hung",
+                "info": "Professor and Director at<br>Ontario Tech University"
+            },
+            {
+                "image": "Michael Thelander.jpg",
+                "name": "Michael Thelander",
+                "info": "Evangelist for Emerging<br>Technologies and<br>Practices, Venafi"
+            },
+            {
+                "image": "Cathal.png",
+                "name": "Dr. Cathal Smyth",
+                "info": "Sr. Manager of JSOC<br>RBC Global Cybersecurity"
+            },
+            {
+                "image": "Vladimir Soukharev.jpg",
+                "name": "Dr. Vladimir Soukharev",
+                "info": "Principal Crypto Technologist &<br>Chief Post-Quantum Researcher<br>at InfoSec Global"
+            }
+        ]
+    },
+    {
+        "year": "2019",
+        "list": [
+            {
+                "image": "Adam_Evans.jpg",
+                "name": "Adam Evans",
+                "info": "Vice President, Cyber Operations and Chief Information Security Officer of RBC"
+            },
+            {
+                "image": "Luciano_Kampmann_AVP.jpeg",
+                "name": "Luciano Kampmann AVP",
+                "info": "North America Information Risk Management of Manulife"
+            },
+            {
+                "image": "Marty_Milbert.jpg",
+                "name": "Marty Milbert",
+                "info": "Global Principal Architect, Venafi"
+            },
+            {
+                "image": "May_Sarout.jpg",
+                "name": "May Sarout",
+                "info": "Global Cyber Security Senior Director of RBC"
+            },
+            {
+                "image": "Shane_Sauer.jpg",
+                "name": "Shane Sauer",
+                "info": "Regional Director, Financial Services, <br>Digital Risk & Compliance at Proofpoint"
+            },
+            {
+                "image": "Will_Xiang.jpeg",
+                "name": "Will Xiang",
+                "info": "VP Risk Management, Richter"
+            }
+        ]
+    }
+]

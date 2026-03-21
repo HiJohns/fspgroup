@@ -1,0 +1,31 @@
+[
+    {
+        "icon": "dist/images/ECeT.png",
+        "title": "Eastern Canada eTrust User Group",
+        "link": "http://causergroups.com/UserGroups/UserGroupHome.aspx?ID=70"
+    },
+    {
+        "icon": "dist/images/logo_isc.png",
+        "title": "International Information Systems Security Certification Consortium, Inc.",
+        "link": "http://www.isc2.org/",
+        "style": {
+            "fontSize": "22px",
+            "paddingTop": "8px"
+        }
+    },
+    {
+        "icon": "dist/images/logo_issa.png",
+        "title": "Information Systems Security Association",
+        "link": "http://www.issa.org/"
+    },
+    {
+        "icon": "dist/images/logo_task.png",
+        "link": "http://www.task.to/",
+        "title": "Toronto Area Security Klatch"
+    },
+    {
+        "icon": "dist/images/logo_sector.png",
+        "link": "http://www.sector.ca/",
+        "title": "Security Education Conference"
+    }
+]

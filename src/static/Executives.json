@@ -1,0 +1,46 @@
+[
+    {
+        "members": [
+            {
+                "name": "Nelson Liu",
+                "company": "RBC"
+            },
+            {
+                "name": "Haoran Huang",
+                "company": "RBC"
+            },
+            {
+                "name": "Frank Lau",
+                 "company": "RBC"
+            },
+            {
+                "name": "Clement Lee",
+                 "company": "Independent InfoSec Professional"
+            },
+            {
+                "name": "Mark Brunner",
+                 "company": "Independent InfoSec Professional"
+            },
+            {
+                "name": "Ian Gerics",
+                 "company": "RBC"
+            },
+            {
+                "name": "Matthew Dietrich",
+                "company": "RBC"
+            },
+            {
+                "name": "Qingjiu Jia",
+                "company": "RBC"
+            },
+            {
+                "name": "Mark D'Angelo",
+                 "company": "RBC"
+            },
+            {
+                "name": "Luciano Kampmann",
+                "company": "Manulife"
+            }
+        ]
+    }
+]
