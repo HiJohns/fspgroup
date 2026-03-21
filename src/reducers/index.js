@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux'
-import { routerReducer } from 'react-router-redux'
+import { connectRouter } from 'connected-react-router'
 
 import about from './About'
 import news from './News'
 
-export default combineReducers({
+export default (history) => combineReducers({
     about,
     news,
-    routerReducer
+    router: connectRouter(history)
 })

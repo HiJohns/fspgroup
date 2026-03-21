@@ -5,11 +5,10 @@ import { createStore, applyMiddleware } from 'redux'
 
 import { createBrowserHistory } from 'history'
 import { Route, Redirect, Switch, withRouter } from 'react-router-dom'
-import { ConnectedRouter } from 'connected-react-router'
-import { routerMiddleware, push } from 'react-router-redux'
+import { ConnectedRouter, connectRouter, routerMiddleware } from 'connected-react-router'
 import moment from 'moment'
 
-import app from './reducers'
+import createRootReducer from './reducers'
 import middlewares from './middlewares'
 import { load as loadAbout } from './actions/About'
 import About from './containers/pages/About'
@@ -43,7 +42,7 @@ const logger = ({ getState }) => {
   }
 }
 
-store = createStore( app, {}, applyMiddleware(routerMiddleware(history), middlewareLoader, logger) );
+store = createStore( createRootReducer(history), {}, applyMiddleware(routerMiddleware(history), middlewareLoader, logger) );
 store.dispatch(loadAbout());
 
 window.store = store;
