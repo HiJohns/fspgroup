@@ -1,4 +1,14 @@
-.PHONY: build deploy deploy-ftp
+.PHONY: build deploy deploy-ftp web web-dev
+
+# Production build (wraps npm run build)
+web:
+	@echo "Running production build..."
+	@npm run build
+
+# Development build (wraps npm run dev)
+web-dev:
+	@echo "Running development build..."
+	@npm run build:dev
 
 # Build the project
 build:
