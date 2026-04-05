@@ -10,24 +10,13 @@ const styles = {
         border: "1px dotted #999",
         padding: "1rem 0 42px"
     },
-    boxTitle: {
-        display: 'block',
-        margin: '0 auto'
-    },
-    boxSubtitle: {
-        display: 'block',
-        margin: '0 auto'
-    },
     theme: {
         width: "332px"
     },
-    diamond: {
+    platinum: {
         width: "235px"
     },
     gold: {
-        width: "200px"
-    },
-    premium: {
         width: "200px"
     },
     venue: {
@@ -44,7 +33,7 @@ const styles = {
         backgroundColor: "#F0F8FF",
         padding: "5px"
     },
-    diamondLabel: {
+    platinumLabel: {
         textAlign: 'center',
         fontSize: "24px",
         color: "#4B0082",
@@ -55,7 +44,7 @@ const styles = {
         backgroundColor: "#E6E6FA",
         padding: "5px"
     },
-    premiumLabel: {
+    goldLabel: {
         textAlign: 'center',
         fontSize: "22px",
         color: "#8A6D1D",
@@ -64,15 +53,6 @@ const styles = {
         textShadow: "1px 1px 2px rgba(0, 0, 0, 02:)",
         letterSpacing: "normal",
         backgroundColor: "#FCF9E3",
-        padding: "5px"
-    },
-    exhibitorLabel: {
-        textAlign: 'center',
-        fontSize: "20px",
-        color: "#696969",
-        fontWeight: "400",
-        textTransform: "none",
-        letterSpacing: "05px:",
         padding: "5px"
     },
     venueLabel: {
@@ -123,9 +103,8 @@ const sliderOptions = {
 
 const label = {
     theme: [ 'theme.png', 'themeR.png' ],
-    diamond: [ 'diamond.png', 'diamondR.png' ],
+    platinum: [ 'platinum.png', 'platinumR.png' ],
     gold: [ 'gold.png', 'goldR.png' ],
-    // silver: [ 'silver.png', 'silverR.png' ],
 }
 
 export default class Sponsors extends Component {
@@ -133,7 +112,7 @@ export default class Sponsors extends Component {
         data: PropTypes.arrayOf(PropTypes.shape({
             icon: PropTypes.string.isRequired,
             link: PropTypes.string.isRequired,
-            level: PropTypes.oneOf(['theme', 'platinum', 'gold', 'premium', 'exhibitor']).isRequired
+            level: PropTypes.oneOf(['theme', 'platinum', 'gold', 'venue']).isRequired
         }))
     }
 
@@ -148,7 +127,7 @@ export default class Sponsors extends Component {
     renderSponsors() {
         let { data } = this.props;
 
-        let boxes = [ 'theme', 'premium' ].map((level, index) => {
+        let boxes = [ 'theme', 'platinum', 'gold', 'venue' ].map((level, index) => {
             let config = label[level];
             let list = data
                 .filter(rec => rec.level === level)
@@ -167,37 +146,6 @@ export default class Sponsors extends Component {
                 </div>
             )
         });
-
-        let regulars = data.filter(rec => rec.level === 'exhibitor');
-        boxes.push((
-            <div style={styles.box} key="sponsor_box_4">
-                <h4 style={styles.exhibitorLabel}>Exhibitor</h4>
-                <div style={styles.sponsorContainer}>
-                    <Slider {...sliderOptions}>{regulars.map((regular, index) => this.renderImage(regular, index))}</Slider>
-                </div>
-            </div>
-        ));
-
-        let venues = data
-            .filter(rec => rec.level === 'venue')
-            .map((sponsor, index) => <a key={"sponsor_"+sponsor.level+"_"+index} href={sponsor.link}><img style={styles[sponsor.level]} src={sponsor.icon}/></a>);
-
-        if (venues.length > 0) {
-            let inserted = [];
-            venues.forEach((rec, index) => {
-                if (index > 0) inserted.push(<div style={styles.spacer} key={"index_"+index}/>)
-                inserted.push(rec);
-            });
-
-            boxes.push((
-                <div style={styles.box} key="sponsor_box_5">
-                    <h4 style={styles.venueLabel}>Venue Sponsor</h4>
-                    <div style={styles.venueContainer}>
-                        <div style={styles.boxSponsors}> {inserted} </div>
-                    </div>
-                </div>
-            ));
-        }
 
         return boxes;
     }
