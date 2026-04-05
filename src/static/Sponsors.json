@@ -1,38 +1,28 @@
 [
     {
-        "icon": "dist/images/logo_zscaler.png",
-        "link": "https://www.zscaler.com/",
-        "level": "theme"
-    },
-    {
         "icon": "dist/images/logo_vanguard.png",
         "link": "https://www.go2vanguard.com",
         "level": "theme"
     },
     {
-        "icon": "dist/images/logo_thales.jpg",
+        "icon": "dist/images/logo_thales.png",
         "link": "http://www.gemalto.com/",
-        "level": "premium"
-    },
-    {
-        "icon": "dist/images/logo_tanium.png",
-        "link": "https://www.tanium.com",
-        "level": "exhibitor"
+        "level": "platinum"
     },
     {
         "icon": "dist/images/logo_entrust.png",
         "link": "https://www.entrust.com",
-        "level": "exhibitor"
+        "level": "platinum"
     },
     {
-        "icon": "dist/images/logo_hashicorp.png",
-        "link": "https://www.hashicorp.com",
-        "level": "exhibitor"
+        "icon": "dist/images/logo_island.png",
+        "link": "https://www.island.com",
+        "level": "gold"
     },
     {
-        "icon": "dist/images/logo_npcdataguard.png",
-        "link": "https://npcdataguard.com",
-        "level": "exhibitor"
+        "icon": "dist/images/logo_opentext.png",
+        "link": "https://www.opentext.com",
+        "level": "gold"
     },
     {
         "icon": "dist/images/logo_rbc.png",
