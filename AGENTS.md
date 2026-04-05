@@ -2,297 +2,287 @@
 
 ## Project Overview
 
-This is a React-based website for the Federation of Security Professionals using a Redux-like architecture with custom middleware. The project serves static HTML pages with bundled JavaScript.
+React-based static website for the Federation of Security Professionals using Redux architecture with custom middleware. The project builds multiple entry points via Webpack.
 
-## Build/Lint/Test Commands
+## Build Commands
 
-> **Note**: No `package.json` or build configuration found in this repository. The build process appears to be external. When adding new features:
-> - Verify changes work by opening HTML files directly in a browser
-> - Use browser DevTools (F12) for debugging
-> - JavaScript in `dist/` is compiled output; edit source in `src/` only
-
-### If build configuration exists elsewhere
 ```bash
-# Install dependencies (if package.json is added)
+# Install dependencies
 npm install
 
-# Development build
+# Production build (minified)
 npm run build
+# or
+make web
 
-# Production build  
-npm run prod
+# Development build
+npm run build:dev
+# or
+make web-dev
 
-# Linting
-npm run lint
+# Watch mode for development
+npm run watch
 
-# Run a single test
-npm test -- --grep "test name"
+# Deploy to FTP
+make deploy
 
-# Watch mode for tests
-npm test -- --watch
+# Create backup
+make backup
 ```
+
+**Note**: No test framework is currently configured. To test changes, open HTML files directly in browser and use DevTools (F12).
 
 ## Code Style Guidelines
 
 ### File Organization
 ```
 src/
-├── actions/          # Redux action creators (one file per domain)
-├── clients/          # API clients (fetch/ajax calls)
+├── actions/          # Redux action creators
+├── clients/          # API client modules
 ├── components/       # Presentational React components
-│   └── main/         # Sub-components for main page sections
-├── containers/       # Smart/connected components
-│   ├── pages/        # Page-level containers (Main, Executives, etc.)
-│   ├── main/, news/, sponsors/, etc.  # Feature-specific containers
+│   ├── executives/   # Domain-specific components
+│   ├── main/
+│   ├── news/
+│   └── sponsors/
+├── containers/       # Connected/page components
 ├── helpers/          # Utility functions
-├── middlewares/      # Custom Redux middleware
-├── reducers/         # Redux reducers (one file per domain)
-├── static/           # Static JSON data files
-└── index.js          # App entry point
+├── middlewares/      # Redux middleware
+├── reducers/         # Redux reducers
+├── static/           # Static JSON data
+└── *.js              # Page entry points
 ```
 
-### JavaScript Conventions
+### Key Conventions
 
 **Indentation**: 4 spaces
 
-**Variable Declarations**:
-- Use `let` for variables, `const` for constants
-- Avoid `var`
-
-**Strings**: Single quotes preferred
+**Strings**: Single quotes
 ```javascript
-const name = 'John';
+const name = 'FSP';
 const path = 'dist/images/logo.png';
 ```
 
-**Semicolons**: Required at end of statements
+**Semicolons**: Required
 
-**Export Pattern**:
+**Variable Declarations**: Use `let` and `const`, avoid `var`
+
+**Exports**: Default for components, named for utilities
 ```javascript
-// Default export for modules with single main export
-export default function MyComponent() { }
+// Component
+export default class MyComponent extends Component { }
 
-// Named export for utilities and constants
-export const HELPER_METHOD = 'value';
-export const formatDate = () => { };
+// Utilities
+export const formatDate = (date) => { };
 ```
 
 ### React Components
 
-**Class Components** (current convention):
+**Class-based** with PropTypes:
 ```javascript
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class MyComponent extends Component {
     static propTypes = {
         title: PropTypes.string.isRequired,
         items: PropTypes.arrayOf(PropTypes.object),
         onSelect: PropTypes.func
-    }
+    };
 
     static defaultProps = {
         items: [],
         onSelect: () => {}
-    }
+    };
 
     render() {
         const { title, items } = this.props;
         return (
             <div className="component">
                 <h1>{title}</h1>
-                { items.map((item, index) => this.renderItem(item, index)) }
+                {items.map((item, idx) => this.renderItem(item, idx))}
             </div>
-        )
-    }
-
-    renderItem(item, index) {
-        return (
-            <div key={'item_' + index}>{item.name}</div>
-        )
+        );
     }
 }
 ```
 
-**Inline Styles**: Use JavaScript objects with camelCase properties
+**Inline Styles**: CamelCase JavaScript objects
 ```javascript
 const styles = {
     container: {
-        backgroundColor: "rgb(27,42,68)",
-        height: "100px",
-        display: "flex"
-    },
-    title: {
-        fontSize: "20px"
+        backgroundColor: 'rgb(27,42,68)',
+        height: '100px',
+        display: 'flex'
     }
-}
+};
 ```
 
 ### Redux Patterns
 
-**Action Creators** (`src/actions/`):
+**Actions**:
 ```javascript
-// Simple actions
-export const load = id => ({
-    type: 'NEWS_LOAD',
+export const load = (id) => ({
+    type: 'DOMAIN_LOAD',
     payload: { id }
-})
+});
 
-// No parameters
-export const clear = () => ({ type: 'CLEAR' })
+export const clear = () => ({ type: 'DOMAIN_CLEAR' });
 ```
 
-**Reducers** (`src/reducers/`):
+**Reducers**:
 ```javascript
 const defaultState = {
     current: null,
     loading: false
-}
+};
 
 export default (state = defaultState, action) => {
     let { payload, type } = action, update = {};
     switch (type) {
-    case 'LOAD_SUCCESS': {
+        case 'DOMAIN_LOAD_SUCCESS':
             if (!payload.success) break;
             update.current = payload.result;
-        }
-        break;
+            break;
+        default:
+            break;
     }
     return Object.assign({}, state, update);
-}
+};
 ```
 
-**Middleware** (`src/middlewares/`):
+**Middleware**:
 ```javascript
-import MyClient from '../clients/MyClient'
+import MyClient from '../clients/MyClient';
 
 const loadData = (getState, action, next) => {
     let { payload } = action;
-    MyClient.load(payload.id).then(result => {
-        next(Object.assign({}, action, { 
-            payload: Object.assign({}, payload, { success: true, result }) 
-        }));
-    }, err => {
-        next(Object.assign({}, action, { 
-            payload: Object.assign({}, payload, { success: false, err }) 
-        }));
-        alert('Server error. Please try again later.');
-    });
-}
+    MyClient.load(payload.id).then(
+        (result) => {
+            next({ ...action, payload: { ...payload, success: true, result } });
+        },
+        (err) => {
+            next({ ...action, payload: { ...payload, success: false, err } });
+            alert('Server error. Please try again later.');
+        }
+    );
+};
 
 export default {
-    'LOAD': loadData
-}
+    'DOMAIN_LOAD': loadData
+};
 ```
 
-**Middleware Registration** (`src/middlewares/index.js`):
+**Middleware Registration** (src/middlewares/index.js):
 ```javascript
-import About from './About'
-import News from './News'
+import About from './About';
+import News from './News';
 
 let combine = {};
-
-export default combine;
-
-[
-    About,
-    News
-].forEach(function (handlers) {
+[About, News].forEach((handlers) => {
     for (let key in handlers) {
         let list = combine.hasOwnProperty(key) ? combine[key] : [];
         list.push(handlers[key]);
         combine[key] = list;
     }
 });
+export default combine;
 ```
 
-**Container Components** (`src/containers/`):
+**Container Components**:
 ```javascript
-import { connect } from 'react-redux'
-import Page from '../../components/Page'
-import HeaderMenu from '../../static/HeaderMenu'
-import Section from '../main/'
+import { connect } from 'react-redux';
+import Page from '../../components/Page';
+import HeaderMenu from '../../static/HeaderMenu';
+import Section from '../main/';
 
-export default connect(
-    state => ({
-        name: 'main',
-        menu: HeaderMenu,
-        content: Section
-    })
-)(Page);
+export default connect((state) => ({
+    name: 'main',
+    menu: HeaderMenu,
+    content: Section
+}))(Page);
 ```
 
-### API Clients (`src/clients/`)
+### API Clients
 
 ```javascript
-import superagent from 'superagent'
+import superagent from 'superagent';
 
 export default {
-    load: id => new Promise((resolve, reject) => {
-        superagent.get('dist/html/news/' + id + '.html')
-            .end((err, res) => {
-                if (err) {
-                    reject(err.response);
-                } else {
-                    resolve(res.text);
-                }
-            });
-    })
-}
+    load: (id) =>
+        new Promise((resolve, reject) => {
+            superagent
+                .get(`dist/html/${id}.html`)
+                .end((err, res) => {
+                    if (err) reject(err.response);
+                    else resolve(res.text);
+                });
+        })
+};
+```
+
+### Import Order
+
+```javascript
+// 1. External libraries
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
+// 2. Relative imports
+import MyComponent from '../components/MyComponent';
+import { formatDate } from '../helpers/Utils';
+import myData from '../static/myData.json';
 ```
 
 ### Naming Conventions
 
 | Type | Convention | Example |
 |------|------------|---------|
-| Files | PascalCase or camelCase | `NewsClient.js`, `About.js` |
+| Files | PascalCase | `NewsClient.js` |
 | React Components | PascalCase | `MyComponent` |
 | Functions/variables | camelCase | `loadData`, `currentPage` |
-| Constants | UPPER_SNAKE | `MAX_ITEMS`, `API_URL` |
+| Constants | UPPER_SNAKE | `API_PATH`, `MAX_RETRIES` |
 | Action types | UPPER_SNAKE | `NEWS_LOAD`, `ABOUT_UPDATE` |
 | JSON keys | camelCase | `"firstName": "John"` |
 
 ### Error Handling
 
-- Use Promises with `.then()` and `.catch()` for async operations
+- Always handle both success and failure in middleware
 - Show user-friendly alerts for critical errors
-- Log errors to console during development
-- Always handle both success and failure cases in middleware
-
-### Imports
-
-**Order**:
-1. External libraries (React, Redux, React Router, etc.)
-2. Relative imports (actions, components, helpers)
-
-```javascript
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
-
-import Footer from '../containers/Footer'
-import Header from '../components/Header'
-import { formatDate } from '../helpers/Utils'
-```
+- Use Promise `.then()` and `.catch()` for async operations
+- Log errors to console in development mode
 
 ### HTML Templates
 
-**Static HTML files** serve as entry points:
-- Include `<div id="app"/>` for React mounting
-- Load compiled JS from `dist/js/bundle.min.js`
+Static HTML entry points must:
+- Include `<div id="app"></div>` for React mounting
+- Load compiled JS from `dist/js/[name].min.js`
 - Load CSS from `dist/css/style.css`
+
+### Webpack Entry Points
+
+- bundle: Main application
+- about: About page
+- executives: Executives page
+- news: News page
+- seminars: Seminars page
+- sponsors: Sponsors page
+
+Build outputs to `dist/js/[name].min.js`
 
 ### Adding New Features
 
-1. **New Page**: Create container in `src/containers/pages/`
-2. **New Data Type**: Add action/reducer/middleware/client following existing patterns
-3. **New Component**: Place in appropriate `components/` or `containers/` subdirectory
-4. **Update HTML**: Add route in `src/index.js` and link in `src/static/HeaderMenu.json`
+1. **New Page**: Create entry point, container in `containers/pages/`, add route in entry file
+2. **New Data Type**: Add action, reducer, middleware, and client following patterns
+3. **New Component**: Place in appropriate `components/` subdirectory
+4. **Update Navigation**: Modify `src/static/HeaderMenu.json`
 
 ### Key Dependencies
 
-- react, react-dom
-- react-router, react-router-redux
-- redux
-- superagent (HTTP client)
-- moment (date formatting)
+- react ^16.14.0, react-dom ^16.14.0
+- react-redux ^7.2.8, redux ^4.2.0
+- react-router-dom ^5.3.3
+- connected-react-router ^6.9.3
+- superagent ^7.1.6 (HTTP client)
+- moment ^2.29.4 (date formatting)
+- webpack ^5.75.0, babel ^7.20.0
