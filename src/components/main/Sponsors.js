@@ -2,23 +2,14 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 const styles = {
-    diamond: {
-        width: "245px"
+    platinum: {
+        maxWidth: '176px'
     },
     gold: {
-        width: "178px"
-    },
-    premium: {
-        width: "178px"
-    },
-    silver: {
-        width: "113px"
-    },
-    regular: {
-        width: "90px"
+        maxWidth: '127px'
     },
     venue: {
-        width: "178px"
+        maxWidth: '176px'
     },
     container: {
         left: "0px",
@@ -53,18 +44,6 @@ const styles = {
     theme: {
         maxWidth: '245px'
     },
-    diamond: {
-        maxWidth: '196px'
-    },
-    gold: {
-        maxWidth: '157px'
-    },
-    exhibitor: {
-        maxWidth: '125px'
-    },
-    venue: {
-        maxWidth: '196px'
-    },
     level: {
         margin: "18px 0"
     }
@@ -80,7 +59,7 @@ export default class Sponsors extends Component {
     }
 
     renderSponsors() {
-        let { sponsors } = this.props, levels = [ 'theme', 'platinum', 'gold', 'premium', 'exhibitor', 'venue' ];
+        let { sponsors } = this.props, levels = [ 'theme', 'platinum', 'gold', 'venue' ];
 
         return levels.map((level, index) => {
             let theLevel = sponsors.filter(sponsor => sponsor.level === level);
