@@ -133,7 +133,7 @@ export default class Sponsors extends Component {
         data: PropTypes.arrayOf(PropTypes.shape({
             icon: PropTypes.string.isRequired,
             link: PropTypes.string.isRequired,
-            level: PropTypes.oneOf(['theme', 'premium', 'exhibitor']).isRequired
+            level: PropTypes.oneOf(['theme', 'platinum', 'gold', 'premium', 'exhibitor']).isRequired
         }))
     }
 
