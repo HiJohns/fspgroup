@@ -80,7 +80,7 @@ export default class Sponsors extends Component {
     }
 
     renderSponsors() {
-        let { sponsors } = this.props, levels = [ 'theme', 'premium', 'exhibitor', 'venue' ];
+        let { sponsors } = this.props, levels = [ 'theme', 'platinum', 'gold', 'premium', 'exhibitor', 'venue' ];
 
         return levels.map((level, index) => {
             let theLevel = sponsors.filter(sponsor => sponsor.level === level);
