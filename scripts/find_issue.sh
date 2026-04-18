@@ -1,0 +1,1 @@
+.config/opencode/scripts/find_issue.sh
