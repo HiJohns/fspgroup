@@ -24,7 +24,7 @@ const styles = {
         maxWidth: '100%'
     },
     highlights: {
-        display: 'flex'
+        display: 'none'
     }
 }
 
@@ -42,7 +42,6 @@ export default class News extends Component {
     }
 
     renderHighlight(highlight, index, total) {
-        console.log('renderHighlight', highlight, index, total)
         let style = Object.assign({}, styles.figure)
 
         if (index === 0) Object.assign(style, styles.figureLeft)
