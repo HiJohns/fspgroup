@@ -52,7 +52,7 @@ class Node {
     }
 }
 
-const tags = ['small', 'div', 'span', 'ul', 'li', 'h4', 'p', 'a', 'section', 'iframe'];
+const tags = ['small', 'div', 'span', 'ul', 'li', 'h4', 'p', 'a', 'section', 'iframe', 'img', 'br'];
 
 const parseOptions = options => {
     let result = {};
@@ -73,9 +73,18 @@ export default html => {
     segments.shift(); // Ignore the text before the first tag
 
     segments.forEach(segment => {
+        let isSelfClosing = segment.trim().endsWith('/');
         let stack = segment.split(' ');
-        if (tags.indexOf(stack[0]) >= 0) {
-            current = new Node(stack[0], parseOptions(stack.slice(1).join(' ')), current);
+        let tagName = stack[0];
+        
+        if (tags.indexOf(tagName) >= 0) {
+            if (isSelfClosing) {
+                // Self-closing tag: create and immediately close
+                current = new Node(tagName, parseOptions(stack.slice(1, -1).join(' ')), current);
+                current = current.parent; // Move back to parent
+            } else {
+                current = new Node(tagName, parseOptions(stack.slice(1).join(' ')), current);
+            }
         } else if (current !== null) {
             current = current.addText(segment);
         }
