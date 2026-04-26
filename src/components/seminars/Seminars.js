@@ -39,6 +39,24 @@ const styles = {
     },
     line: {
         lineHeight: "30px"
+    },
+    featured: {
+        textAlign: "center",
+        margin: "2rem 0"
+    },
+    featuredImageBox: {
+        display: "flex",
+        justifyContent: "center",
+        marginBottom: "1rem"
+    },
+    featuredImage: {
+        maxWidth: "100%",
+        maxHeight: "400px",
+        height: "auto"
+    },
+    featuredCaption: {
+        fontSize: "1.1rem",
+        lineHeight: "1.5"
     }
 }
 
@@ -52,6 +70,11 @@ export default class Seminars extends Component {
         })),
         speakers: PropTypes.arrayOf(PropTypes.shape({
             year: PropTypes.string.isRequired,
+            featured: PropTypes.shape({
+                image: PropTypes.string.isRequired,
+                name: PropTypes.string.isRequired,
+                info: PropTypes.string.isRequired
+            }),
             list: PropTypes.arrayOf(PropTypes.shape({
                 image: PropTypes.string.isRequired,
                 name: PropTypes.string.isRequired,
@@ -96,8 +119,27 @@ export default class Seminars extends Component {
         return (
             <section key={`group_${index}`}>
                 <h2>{group.year} Speakers</h2>
+                {group.featured && this.renderFeatured(group.featured, group.year)}
                 {this.renderSpeakers(group.list, group.year)}
             </section>
+        )
+    }
+
+    renderFeatured(featured, year) {
+        return (
+            <div style={styles.featured}>
+                <div style={styles.featuredImageBox}>
+                    <img 
+                        src={`dist/images/speakers/${year}/${featured.image}`} 
+                        style={styles.featuredImage}
+                        alt={featured.name}
+                    />
+                </div>
+                <figcaption className="text" style={styles.featuredCaption}>
+                    <strong>{featured.name}</strong><br/>
+                    {featured.info}
+                </figcaption>
+            </div>
         )
     }
 
