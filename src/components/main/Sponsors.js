@@ -3,19 +3,25 @@ import PropTypes from 'prop-types'
 
 const styles = {
     platinum: {
-        maxWidth: '176px',
         maxHeight: '80px',
         minHeight: '60px'
     },
+    platinumImg: {
+        maxWidth: '176px'
+    },
     gold: {
-        maxWidth: '127px',
         maxHeight: '60px',
         minHeight: '45px'
     },
+    goldImg: {
+        maxWidth: '127px'
+    },
     venue: {
-        maxWidth: '176px',
         maxHeight: '80px',
         minHeight: '60px'
+    },
+    venueImg: {
+        maxWidth: '176px'
     },
     container: {
         left: "0px",
@@ -48,9 +54,11 @@ const styles = {
         margin: '1rem 0'
     },
     theme: {
-        maxWidth: '245px',
         maxHeight: '100px',
         minHeight: '70px'
+    },
+    themeImg: {
+        maxWidth: '245px'
     },
     level: {
         margin: "18px 0"
@@ -74,9 +82,9 @@ export default class Sponsors extends Component {
             return (
                 <ul className="clear" style={styles.level} key={"level_"+index}>
                     {theLevel.map((sponsor, si) => (
-                        <li key={'sponsor_'+index+'_' +si} style={styles.sponsorBox}>
+                        <li key={'sponsor_'+index+'_' +si} style={styles[sponsor.level]}>
                             <a href={sponsor.link}>
-                                <img src={sponsor.icon} style={styles[sponsor.level]}/>
+                                <img src={sponsor.icon} style={styles[sponsor.level + 'Img']}/>
                             </a>
                         </li>
                     ))}

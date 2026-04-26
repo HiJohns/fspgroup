@@ -11,24 +11,32 @@ const styles = {
         padding: "1rem 0 42px"
     },
     theme: {
-        width: "332px",
         maxHeight: "100px",
         minHeight: "70px"
     },
+    themeImg: {
+        maxWidth: "332px"
+    },
     platinum: {
-        width: "235px",
         maxHeight: "80px",
         minHeight: "60px"
     },
+    platinumImg: {
+        maxWidth: "235px"
+    },
     gold: {
-        width: "200px",
         maxHeight: "60px",
         minHeight: "45px"
     },
+    goldImg: {
+        maxWidth: "200px"
+    },
     venue: {
-        width: "235px",
         maxHeight: "80px",
         minHeight: "60px"
+    },
+    venueImg: {
+        maxWidth: "235px"
     },
     themeLabel: {
         textAlign: 'center',
@@ -139,7 +147,13 @@ export default class Sponsors extends Component {
             let config = label[level];
             let list = data
                 .filter(rec => rec.level === level)
-                .map((sponsor, index) => <a key={`sponsor_${sponsor.level}_${index}`} href={sponsor.link}><img style={styles[sponsor.level]} src={sponsor.icon}/></a>),
+                .map((sponsor, index) => (
+                    <div style={styles[sponsor.level]} key={`sponsor_${sponsor.level}_${index}`}>
+                        <a href={sponsor.link}>
+                            <img style={styles[sponsor.level + 'Img']} src={sponsor.icon}/>
+                        </a>
+                    </div>
+                )),
                 inserted = [];
 
             list.forEach((rec, index) => {
