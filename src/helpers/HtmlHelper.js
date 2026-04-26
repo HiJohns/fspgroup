@@ -69,26 +69,49 @@ const parseOptions = options => {
 }
 
 export default html => {
-    let segments = html.split(/<(\w+\s*[^>]*)>/), current = null;
-    segments.shift(); // Ignore the text before the first tag
-
-    segments.forEach(segment => {
-        let isSelfClosing = segment.trim().endsWith('/');
-        let stack = segment.split(' ');
-        let tagName = stack[0];
-        
-        if (tags.indexOf(tagName) >= 0) {
-            if (isSelfClosing) {
-                // Self-closing tag: create and immediately close
-                current = new Node(tagName, parseOptions(stack.slice(1, -1).join(' ')), current);
-                current = current.parent; // Move back to parent
-            } else {
-                current = new Node(tagName, parseOptions(stack.slice(1).join(' ')), current);
+    const tokenRegex = /<(\/?)(\w+)\s*([^>]*)>|([^<]+)/g;
+    let current = null;
+    let root = null;
+    let match;
+    
+    while ((match = tokenRegex.exec(html)) !== null) {
+        if (match[4]) {
+            // Text content
+            let text = match[4];
+            if (text.trim().length > 0 && current !== null) {
+                current = current.addText(text);
             }
-        } else if (current !== null) {
-            current = current.addText(segment);
+        } else {
+            let isClosing = match[1] === '/';
+            let tagName = match[2];
+            let attrs = match[3].trim();
+            let isSelfClosing = attrs.endsWith('/');
+            if (isSelfClosing) {
+                attrs = attrs.slice(0, -1).trim();
+            }
+            
+            if (tags.indexOf(tagName) >= 0) {
+                if (isClosing) {
+                    if (current && current.tag === tagName) {
+                        current = current.parent;
+                    }
+                } else if (isSelfClosing) {
+                    if (current) {
+                        new Node(tagName, parseOptions(attrs), current);
+                    }
+                } else {
+                    if (!root) {
+                        root = new Node(tagName, parseOptions(attrs), null);
+                        current = root;
+                    } else {
+                        current = new Node(tagName, parseOptions(attrs), current);
+                    }
+                }
+            } else if (current !== null) {
+                current = current.addText(match[0]);
+            }
         }
-    });
+    }
 
-    return current.generate();
+    return root ? root.generate() : null;
 }
