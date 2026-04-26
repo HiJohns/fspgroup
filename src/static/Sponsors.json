@@ -20,9 +20,14 @@
         "level": "gold"
     },
     {
+        "icon": "dist/images/logo_npcdataguard.png",
+        "link": "https://npcdataguard.com",
+        "level": "gold"
+    },
+    {
         "icon": "dist/images/logo_opentext.png",
         "link": "https://www.opentext.com",
-        "level": "gold"
+        "level": "platinum"
     },
     {
         "icon": "dist/images/logo_rbc.png",

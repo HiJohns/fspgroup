@@ -2,13 +2,14 @@
     "title": "About FSP",
     "message": [
         "FSP MANDATE: The Federation of Security Professionals (FSP) is a non-profit organization, based in Toronto, Canada, dedicated to promoting education in the field of Information Security.",
+        "[h4]Who runs the FSP?[/h4]",
+        "The FSP is organized and operated through a purely volunteer Executive Committee. Executive Committee members and other volunteers are not paid for their time or services. The FSP Executive Committee members are selected from within its membership.",
+        "images/FSP_team.jpg",
         "[h4]What are the goals of the FSP?[/h4]",
         "The primary goal of the FSP is to provide continuous education opportunities to its members in the field of Information Security, keeping awareness high, and skills sharp. More specifically: :",
         "FSP provides information security seminars, inviting experts to speak on various \"hot topics.\"",
         "FSP provides a networking event where security professionals can discuss and share security issues and solutions.",
         "FSP provides an arena for security vendors to meet with security professionals to present their wares, and discuss strategic, tactical, and operational security solutions.",
-        "[h4]Who runs the FSP?[/h4]",
-        "The FSP is organized and operated through a purely volunteer Executive Committee. Executive Committee members and other volunteers are not paid for their time or services. The FSP Executive Committee members are selected from within its membership.",
         "[h4]Who funds the FSP?[/h4]",
         "Funding for all FSP events is provided by the sponsoring vendor organizations. In exchange for their funding and support, FSP provides the opportunities for our sponsors to present and interact with our membership. Membership interaction with our sponsor vendors is encouraged.",
         "[h4]Who are the members of the FSP?[/h4]",
@@ -17,6 +18,6 @@
         "Members can volunteer their time to help out with FSP events, offer services to improve the FSP, introduce new members and vendors to the FSP, and take part in, or host, FSP events.",
         "[h4]How do members contact the FSP Executive Committee?[/h4]",
         "The FSP Executive Committee members are on site at every FSP event, and can generally be approached for discussion after registration closes, during lunch hour, or any time there is a lull in event activity. FSP provides multiple methods for contact, including a LinkedIn group, the FSP website, and occasional mailings and surveys. If you have comments, suggestions, or enquires, you may contact the FSP Executive Committee via e-mail at admin@fspgroup.ca.",
-        "© Copyright 2001-2020"
+        "© Copyright 2001-2016"
     ]
 }
