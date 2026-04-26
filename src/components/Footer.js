@@ -64,7 +64,7 @@ export default class Footer extends Component {
                     <ul style={styles.socialMedias}>{socialMedias.map((media, index) => this.renderMedia(media, index))}</ul>
                     <div style={styles.contact}>
                         <p style={styles.email}>Contact Us: <a href="mailto:admin@fspgroup.ca" style={styles.link}>admin@fspgroup.ca</a></p>
-                        <p>Copyright @ 2001-2025 FSP All rights reserved</p>
+                        <p>Copyright @ 2001-2026 FSP All rights reserved</p>
                     </div>
                 </div>
             </footer>
