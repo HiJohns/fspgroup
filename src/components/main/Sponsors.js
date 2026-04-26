@@ -4,24 +4,27 @@ import PropTypes from 'prop-types'
 const styles = {
     platinum: {
         maxHeight: '80px',
-        minHeight: '60px'
+        lineHeight: '60px'
     },
     platinumImg: {
-        maxWidth: '176px'
+        maxWidth: '176px',
+        maxHeight: '60px'
     },
     gold: {
         maxHeight: '60px',
-        minHeight: '45px'
+        lineHeight: '45px'
     },
     goldImg: {
-        maxWidth: '127px'
+        maxWidth: '127px',
+        maxHeight: '45px'
     },
     venue: {
         maxHeight: '80px',
-        minHeight: '60px'
+        lineHeight: '60px'
     },
     venueImg: {
-        maxWidth: '176px'
+        maxWidth: '176px',
+        maxHeight: '60px'
     },
     container: {
         left: "0px",
