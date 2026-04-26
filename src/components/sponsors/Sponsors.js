@@ -19,24 +19,27 @@ const styles = {
     },
     platinum: {
         maxHeight: "80px",
-        minHeight: "60px"
+        lineHeight: "60px"
     },
     platinumImg: {
-        maxWidth: "235px"
+        maxWidth: "235px",
+        maxHeight: "80px"
     },
     gold: {
         maxHeight: "60px",
-        minHeight: "45px"
+        lineHeight: "45px"
     },
     goldImg: {
-        maxWidth: "200px"
+        maxWidth: "200px",
+        maxHeight: "60px"
     },
     venue: {
         maxHeight: "80px",
-        minHeight: "60px"
+        lineHeight: "60px"
     },
     venueImg: {
-        maxWidth: "235px"
+        maxWidth: "235px",
+        maxHeight: "80px"
     },
     themeLabel: {
         textAlign: 'center',
