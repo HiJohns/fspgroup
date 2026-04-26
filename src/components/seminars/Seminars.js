@@ -44,14 +44,8 @@ const styles = {
         textAlign: "center",
         margin: "2rem 0"
     },
-    featuredImageBox: {
-        display: "flex",
-        justifyContent: "center",
-        marginBottom: "1rem"
-    },
     featuredImage: {
-        maxWidth: "100%",
-        maxHeight: "400px",
+        width: "100%",
         height: "auto"
     },
     featuredCaption: {
@@ -72,7 +66,6 @@ export default class Seminars extends Component {
             year: PropTypes.string.isRequired,
             featured: PropTypes.shape({
                 image: PropTypes.string.isRequired,
-                name: PropTypes.string.isRequired,
                 info: PropTypes.string.isRequired
             }),
             list: PropTypes.arrayOf(PropTypes.shape({
@@ -128,15 +121,12 @@ export default class Seminars extends Component {
     renderFeatured(featured, year) {
         return (
             <div style={styles.featured}>
-                <div style={styles.featuredImageBox}>
-                    <img 
-                        src={`dist/images/speakers/${year}/${featured.image}`} 
-                        style={styles.featuredImage}
-                        alt={featured.name}
-                    />
-                </div>
+                <img 
+                    src={`dist/images/speakers/${year}/${featured.image}`} 
+                    style={styles.featuredImage}
+                    alt={featured.name}
+                />
                 <figcaption className="text" style={styles.featuredCaption}>
-                    <strong>{featured.name}</strong><br/>
                     {featured.info}
                 </figcaption>
             </div>
