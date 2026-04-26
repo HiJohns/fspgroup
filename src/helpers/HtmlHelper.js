@@ -44,6 +44,10 @@ class Node {
 
     generate() {
         let Tag = this.tag;
+        let isVoid = voidElements.indexOf(Tag) >= 0;
+        if (isVoid) {
+            return <Tag {...this.options} className={this.className} />;
+        }
         if (this.children.length > 0) {
             return <Tag {...this.options} className={this.className}>{this.children.map((child, index) => typeof child === 'string' ? <span key={'text_' + index}>{child}</span> : child.generate())}</Tag>;
         } else {
@@ -53,6 +57,7 @@ class Node {
 }
 
 const tags = ['small', 'div', 'span', 'ul', 'li', 'h4', 'p', 'a', 'section', 'iframe', 'img', 'br'];
+const voidElements = ['img', 'br'];
 
 const parseOptions = options => {
     let result = {};
