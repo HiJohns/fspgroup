@@ -45,8 +45,12 @@ class Node {
     generate() {
         let Tag = this.tag;
         let isVoid = voidElements.indexOf(Tag) >= 0;
+        let style = {};
+        if (Tag === 'img') {
+            style = { maxWidth: '100%', height: 'auto' };
+        }
         if (isVoid) {
-            return <Tag {...this.options} className={this.className} />;
+            return <Tag {...this.options} className={this.className} style={style} />;
         }
         if (this.children.length > 0) {
             return <Tag {...this.options} className={this.className}>{this.children.map((child, index) => typeof child === 'string' ? <span key={'text_' + index}>{child}</span> : child.generate())}</Tag>;
