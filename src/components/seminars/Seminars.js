@@ -41,12 +41,12 @@ const styles = {
         lineHeight: "30px"
     },
     featured: {
-        textAlign: "center",
-        margin: "2rem 0"
+        textAlign: "center"
     },
     featuredImage: {
         width: "100%",
-        height: "auto"
+        height: "auto",
+        margin: "0 2rem"
     },
     featuredCaption: {
         fontSize: "1.1rem",
