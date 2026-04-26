@@ -11,16 +11,24 @@ const styles = {
         padding: "1rem 0 42px"
     },
     theme: {
-        width: "332px"
+        width: "332px",
+        maxHeight: "100px",
+        minHeight: "70px"
     },
     platinum: {
-        width: "235px"
+        width: "235px",
+        maxHeight: "80px",
+        minHeight: "60px"
     },
     gold: {
-        width: "200px"
+        width: "200px",
+        maxHeight: "60px",
+        minHeight: "45px"
     },
     venue: {
-        width: "235px"
+        width: "235px",
+        maxHeight: "80px",
+        minHeight: "60px"
     },
     themeLabel: {
         textAlign: 'center',

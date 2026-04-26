@@ -3,13 +3,19 @@ import PropTypes from 'prop-types'
 
 const styles = {
     platinum: {
-        maxWidth: '176px'
+        maxWidth: '176px',
+        maxHeight: '80px',
+        minHeight: '60px'
     },
     gold: {
-        maxWidth: '127px'
+        maxWidth: '127px',
+        maxHeight: '60px',
+        minHeight: '45px'
     },
     venue: {
-        maxWidth: '176px'
+        maxWidth: '176px',
+        maxHeight: '80px',
+        minHeight: '60px'
     },
     container: {
         left: "0px",
@@ -42,7 +48,9 @@ const styles = {
         margin: '1rem 0'
     },
     theme: {
-        maxWidth: '245px'
+        maxWidth: '245px',
+        maxHeight: '100px',
+        minHeight: '70px'
     },
     level: {
         margin: "18px 0"
