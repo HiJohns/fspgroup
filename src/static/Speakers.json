@@ -7,19 +7,14 @@
         },
         "list": [
             {
-                "image": "Greg Wetmore.JPG",
-                "name": "Greg Wetmore",
-                "info": "President at BDO Canada"
-            },
-            {
-                "image": "Dr. Silas Alves.JPG",
-                "name": "Dr. Silas Alves",
-                "info": "Chief Legal Officer at FSP"
-            },
-            {
                 "image": "Milt Rosberg.JPG",
                 "name": "Milt Rosberg",
                 "info": "Executive Vice President at Vanguard"
+            },
+            {
+                "image": "Greg Wetmore.JPG",
+                "name": "Greg Wetmore",
+                "info": "President at BDO Canada"
             },
             {
                 "image": "Larry Keating1.JPG",
@@ -27,14 +22,9 @@
                 "info": "CEO at PQE Canada"
             },
             {
-                "image": "Dr. Song Wang.JPG",
-                "name": "Dr. Song Wang",
-                "info": "Professor at Toronto Metropolitan University"
-            },
-            {
-                "image": "Mark Brunner.JPG",
-                "name": "Mark Brunner",
-                "info": "Chief Information Security Officer at CPFCU"
+                "image": "Roland Kahl.JPG",
+                "name": "Roland Kahl",
+                "info": "VP Technology at SynSaber"
             },
             {
                 "image": "Henry Anzarouth.JPG",
@@ -42,9 +32,19 @@
                 "info": "Partner at CyberSecured.AI"
             },
             {
-                "image": "Roland Kahl.JPG",
-                "name": "Roland Kahl",
-                "info": "VP Technology at SynSaber"
+                "image": "Patrick C K Hung.jpeg",
+                "name": "Dr. Patrick C.K. Hung",
+                "info": "Professor of Ontario Tech University"
+            },
+            {
+                "image": "Dr. Song Wang.JPG",
+                "name": "Dr. Song Wang",
+                "info": "Professor at Toronto Metropolitan University"
+            },
+            {
+                "image": "Dr. Silas Alves.JPG",
+                "name": "Dr. Silas Alves",
+                "info": "Chief Legal Officer at FSP"
             },
             {
                 "image": "Manal Russel.JPG",
